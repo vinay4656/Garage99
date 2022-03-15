@@ -211,7 +211,7 @@ button:focus {
     height: 1000px;
     right: -287px;
     top: -92px;
-    background-color: #C22A2F;
+    background-color: #ffffff;
     opacity: 0.80;
     -webkit-transform: rotate(-17deg);
     transform: rotate(-17deg);
@@ -1187,7 +1187,7 @@ button:focus {
     top: -70px;
     width: 285px;
     height: 700px;
-    background-color: #000000;
+    background-color: #f6f4f4;
     -webkit-transform: rotate(-19deg);
     transform: rotate(-19deg);
 }
@@ -1251,7 +1251,7 @@ button:focus {
 
 .review-area .review-slider .review-item i {
     display: inline-block;
-    color: #ffffff;
+    color: #989898;
     font-size: 50px;
     margin-bottom: 25px;
 }

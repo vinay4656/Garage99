@@ -318,7 +318,7 @@ button:focus {
     height: 0%;
     left: 0;
     bottom: 0;
-    background-color: #333333;
+    background-color: #f86464;
     border-radius: 50% 50% 0 0;
     opacity: 0;
     -webkit-transition: 0.5s all ease;

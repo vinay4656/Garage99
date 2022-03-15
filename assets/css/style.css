@@ -233,7 +233,7 @@ button:focus {
 
 .banner-area .banner-img img:nth-child(2) {
     right: 50px;
-    top: 260px;
+    top: 296px;
     max-width: 540px;
 }
 
@@ -318,7 +318,7 @@ button:focus {
     height: 0%;
     left: 0;
     bottom: 0;
-    background-color: #f86464;
+    background-color: #eee9e9;
     border-radius: 50% 50% 0 0;
     opacity: 0;
     -webkit-transition: 0.5s all ease;

@@ -24,6 +24,44 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Garage99 - Auto Service and Car Repair</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).scroll(function () {
+
+            var y = $(this).scrollTop();
+            if (y > 850) {
+                $('.showScroll').fadeIn();
+            } else {
+                $('.showScroll').fadeOut();
+            }
+        });
+    </script>
+    <style>
+        @media(max-width:600px) {
+            .screen {
+                top: 0;
+                max-width: 241px !important;
+            }
+
+            #services {
+                margin-top: 100px;
+            }
+
+            .textt {
+                font-size: 32px !important;
+            }
+        }
+
+        .screen {
+            top: 296px;
+            max-width: 569px;
+        }
+        .grey{
+            color: #767575 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,28 +96,28 @@
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Home</a>
+                                <a href="#" class="nav-link grey">HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#services" class="nav-link">Our Services</a>
+                                <a href="#services" class="nav-link grey">OUR SERVICES</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#subscription" class="nav-link">Subscription</a>
+                                <a href="#subscription" class="nav-link grey">SUBSCRIPTION</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a href="store.html" target="_blank" class="nav-link">Online Store</a>
                             </li> -->
                             <li class="nav-item">
-                                <a href="#footer" class="nav-link">contact</a>
+                                <a href="#footer" class="nav-link grey">CONTACT</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="cmn-btn">
-                        <!-- <a class="banner-btn-left"
+                    </div> 
+                    <div class="cmn-btn showScroll" style="display: none;" >
+                        <a class="banner-btn-left"
                             href="https://wa.me/+919035920016?text=Hi%20Garage99%2C%0ANeed%20to%20book%20a%20Car%20Service"
                             target="_blank">
                             Book Now
-                        </a> -->
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -90,14 +128,14 @@
     <div class="banner-area" style="background-color: #ffffff;">
         <div class="banner-img">
             <img src="assets/img/home-oe/banner-tyre.png" alt="Banner">
-            <img class="wow fadeInRightBig" style="max-width: 569px; top:296px" src="assets/img/home-one/banner-car.png" alt="Banner">
-       
+            <img class="wow fadeInRightBig screen" src="assets/img/home-one/banner-car.png" alt="Banner">
+
         </div>
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
                     <div class="banner-text">
-                        <h2 style="color: rgb(232 36 31);
+                        <h2 class="textt" style="color: rgb(232 36 31);
                         
     margin-bottom: -4px;
     font-size: 58px;
@@ -105,14 +143,14 @@
     text-transform: uppercase;
     z-index: 1;
                         "> GET FREE CAR SERVICE</h2>
-                           <h1 style="color: rgb(232 36 31);font-style: normal;"> LIFE TIME</h1>
-                        <h2 >Service right at your doorstep.</h2>
+                        <h1 style="color: rgb(232 36 31);font-style: normal;"> LIFE TIME</h1>
+                        <h2>Service right at your doorstep.</h2>
                         <!-- <p>Regular car service will keep your vehicle in the best condition. The recommended period for
                             a regular service is 10,000 km or every year 6 months.
 
                             You don't want to miss the periodic service on your car. <br>A well-maintained car functions
                             effectively without causing any sort of trouble. </p> -->
-                            <br>
+                        <br>
                         <div class="cmn-btn">
                             <a style="background-color: #25D366;" class="banner-btn-left"
                                 href="https://wa.me/+919035920016?text=Hi%20Garage99%2C%0ANeed%20to%20book%20a%20Car%20Service"
@@ -333,7 +371,7 @@
     </section> -->
 
 
-    <section class="quality-area  pt-100 pb-70"  style="background-color: #f6f4f4;margin-top: 100px;">
+    <section class="quality-area  pt-100 pb-70" style="background-color: #f6f4f4;margin-top: 100px;">
         <div class="quality-img">
             <img src="assets/img/home-one/quality-shape.png" alt="Quality">
             <img src="assets/img/home-one/quality-shape.png" alt="Quality">
@@ -343,7 +381,7 @@
             <div class="quality-content">
                 <div class="section-title">
                     <h2 style="color: rgb(232 36 31);">Quality Work is Our First Priority </h2>
-                    <h3 > And why do we say you can trust us with quality?</h3>
+                    <h3> And why do we say you can trust us with quality?</h3>
                     <p style="color: black"> <br>Quality Check at Every Stage of Car Service.
                         <br>Attention to Minutest Details for Accuracy.
                         <br>Genuine OEM & Quality Supplier Parts for all Brands.
@@ -488,10 +526,10 @@ Read More
         </div>
     </div> -->
 
- <!-- <div class="parts-view">
+    <!-- <div class="parts-view">
                 <a href="store.html">View All</a>
             </div> -->
-            <!-- </div> -->
+    <!-- </div> -->
     <!-- <section class="parts-area ptb-100">
         <div class="container">
             <div class="section-title">
@@ -672,7 +710,8 @@ Read More
                     <div class="review-slider owl-theme owl-carousel">
                         <div class="review-item">
                             <i class='bx bxs-quote-right'></i>
-                            <p style="color: black;">"Great customer service experience. The quality of the work is good and was handled very
+                            <p style="color: black;">"Great customer service experience. The quality of the work is good
+                                and was handled very
                                 professionally."</p>
                             <div class="review-inner">
                                 <img src="assets/img/home-one/review/reviewer-one.png" alt="Review">
@@ -682,7 +721,8 @@ Read More
                         </div>
                         <div class="review-item">
                             <i class='bx bxs-quote-right'></i>
-                            <p style="color: black;">"Excellent service. Importantly, no overbilling and no attempt to change parts
+                            <p style="color: black;">"Excellent service. Importantly, no overbilling and no attempt to
+                                change parts
                                 unnecessarily. Highly recommended!"</p>
                             <div class="review-inner">
                                 <img src="assets/img/home-one/review/reviewer-one.png" alt="Review">
@@ -692,13 +732,14 @@ Read More
                         </div>
                         <div class="review-item">
                             <i class='bx bxs-quote-right'></i>
-                            <p style="color: black;">Very good automobile service station. I always get my cars serviced from fixcraft.
+                            <p style="color: black;">Very good automobile service station. I always get my cars serviced
+                                from fixcraft.
                                 Service is very good and fast. Also Mr. Saurabh is very nice guy and always give good
                                 advice.</p>
                             <div class="review-inner" style="color: black;">
                                 <img src="assets/img/home-one/review/reviewer-one.png" alt="Review">
                                 <h3 style="color: #989898;">Umesh Kushwaha</h3>
-                                <span >Swift</span>
+                                <span>Swift</span>
                             </div>
                         </div>
                     </div>
@@ -735,7 +776,8 @@ Read More
                     ">
                             <ul>
                                 <li>
-                                    <i class='bx bx-check-circle'></i> Life Long Free Labor Charge<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; on Genral
+                                    <i class='bx bx-check-circle'></i> Life Long Free Labor Charge<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; on Genral
                                     Service.
                                 </li>
                                 <li>
@@ -751,7 +793,7 @@ Read More
                             <div class="cmn-btn" style="
                             text-align: center;
                         ">
-                                <a class="banner-btn-left"  href="#">
+                                <a class="banner-btn-left" href="#">
                                     Get Started
                                 </a>
                             </div>
@@ -773,7 +815,8 @@ Read More
                     ">
                             <ul>
                                 <li>
-                                    <i class='bx bx-check-circle'></i> Life Long Free Labor Charge on <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Genral
+                                    <i class='bx bx-check-circle'></i> Life Long Free Labor Charge on <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Genral
                                     Service.
                                 </li>
                                 <li>
@@ -821,7 +864,8 @@ Read More
                                 </li>
                                 <li>
                                     <i class='bx bx-check-circle'></i> 6 months Car Maintenance
-                                    (minor Repairs,Car &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;monthly Inspection , Tyre Service)
+                                    (minor Repairs,Car &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;monthly
+                                    Inspection , Tyre Service)
                                 </li>
                             </ul>
                             <div class="cmn-btn" style="
@@ -1125,7 +1169,7 @@ Testimonials
         </div>
     </footer>
 
-
+  
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
